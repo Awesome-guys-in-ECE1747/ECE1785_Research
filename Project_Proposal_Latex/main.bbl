@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{ekman1999basic}
+P.~Ekman.
+\newblock Basic emotions.
+\newblock {\em Handbook of cognition and emotion}, 98(45-60):16, 1999.
+
+\bibitem{c.elmohamed}
+R.~Gómez.
+\newblock Exploring {E}xpressions of {E}motions in {G}ithub {C}ommit
+  {M}essages.
+\newblock Website, 2012.
+\newblock
+  \url{https://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages}.
+
+\bibitem{wikiemotion}
+Wikipedia.
+\newblock Emotion-wikipedia.
+\newblock Website, 2022.
+\newblock \url{https://en.wikipedia.org/wiki/Emotion}.
+
+\end{thebibliography}

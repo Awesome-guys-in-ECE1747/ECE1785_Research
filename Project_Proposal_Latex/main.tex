@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage{url}
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{ECE1785 Project Proposal: Emotion Mining in Coding}
+\author[1]{Jiaming Xu 1007698831}
+\author[1]{Teng Yue 1007826792}
+\author[1]{Wenrui Xu 1008313228}
+\affil[1]{Group 8, Department of Electrical \& Computer Engineering, University of Toronto}
+\begin{document}
+\maketitle
+
+
+\section{Background}
+Nowadays, with the increasing demand of the Internet applications, software development engineers are playing more and more important roles in the industry. Meanwhile, the coding efficiency of them, which contributes to companies' competitiveness in the industry, is of vital significance to dot-com companies. In order to determine what factors have great impacts on the coding efficiency, many companies have done surveys in this area, and they have made some adjustments to promote engineers' coding efficiency according to the results. As is widely acknowledged, a positive emotion can be a catalyst to work efficiency. However, as far as we are concerned, the previous surveys paid too much attention to the external factors like gender, age, family status, instead of engineers' internal factors, such as emotions. Very few researches connected the relationship between coding efficiency and emotions. Therefore, we expect to mine out the relationship between them, in a gesture to attract more attention to the psychological health of software development engineers.
+
+
+\section{Research Questions}
+How do we define and categorize emotions?\newline
+How do we know engineers' emotions from their codes?\newline
+How do we measure the efficiency of coding?\newline
+Does the emotion change have impact on the efficiency of coding?
+
+\section{Methodology}
+
+As to the catagories of emotions\cite{wikiemotion}, we plan to use Paul's basic emotion framework\cite{ekman1999basic}. This is very convincing and easy enough to operate on.\newline
+Some research plans considered:
+1. Find out some open-source code repositories, get the commit logs of them and analyze the emotions contained in the commit messages. Calculate the number of lines each contributor committed in a certain period of time. Compare the efficiency in different emotions.
+We found some similar emotional mining works on the website which is written by Ramiro\cite{c.elmohamed}. But what he did is just mine out the emotions without connecting it with the coding efficiency.
+
+2. Do some interviews among peers with regard to emotions. Ask the participants to make records of their moods every time they start to work, and calculate their coding efficiency.
+\newline
+\newline
+We think these methods are appropriate in three ways:
+
+1. As a student, we don't have enough time and money to do interviews on a large amount of people. These methods can help us get the original data quickly and easily.
+
+2. The existing emotional mining and NLP technology is well developed, we think we can mine out enough information from the commit messages. 
+
+3. The working efficiency is hard to define, so we can only count on the coding lines to measure it.
+
+
+\section{Expected Results}
+We expect to mine out the relationship between emotions and the coding efficiency. We should quantitatively analyze the results to find out the difference of the coding efficiency between different emotions. We will contribute to the industry after we make it clear that the psychological health of programmers can influence the coding efficiency greatly.
+
+\bibliographystyle{abbrv}
+\bibliography{sample}
+\end{document}

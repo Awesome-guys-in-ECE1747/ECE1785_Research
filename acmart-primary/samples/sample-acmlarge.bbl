@@ -1,0 +1,171 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{10}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Barsade and Gibson}{Barsade and
+  Gibson}{2007}]%
+        {barsade2007does}
+\bibfield{author}{\bibinfo{person}{Sigal~G Barsade} {and}
+  \bibinfo{person}{Donald~E Gibson}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Why does affect matter in organizations?}
+\newblock \bibinfo{journal}{\emph{Academy of management perspectives}}
+  \bibinfo{volume}{21}, \bibinfo{number}{1} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{36--59}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Coviello, Deserranno, Persico, and
+  Sapienza}{Coviello et~al\mbox{.}}{2020}]%
+        {coviello2020effect}
+\bibfield{author}{\bibinfo{person}{Decio Coviello}, \bibinfo{person}{Erika
+  Deserranno}, \bibinfo{person}{Nicola Persico}, {and} \bibinfo{person}{Paola
+  Sapienza}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Effect of mood and worker incentives on
+  workplace productivity}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Mimeo}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ekman}{Ekman}{1999}]%
+        {ekman1999basic}
+\bibfield{author}{\bibinfo{person}{Paul Ekman}.}
+  \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Basic emotions}.
+\newblock \bibinfo{journal}{\emph{Handbook of cognition and emotion}}
+  \bibinfo{volume}{98}, \bibinfo{number}{45-60} (\bibinfo{year}{1999}),
+  \bibinfo{pages}{16}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gómez}{Gómez}{2012}]%
+        {c.elmohamed}
+\bibfield{author}{\bibinfo{person}{Ramiro Gómez}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \bibinfo{title}{Exploring {E}xpressions of {E}motions in {G}itHub
+  {C}ommit {M}essages}.
+\newblock \bibinfo{howpublished}{Website}.
+\newblock
+\newblock
+\shownote{\url{https://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages}.}
+
+
+\bibitem[\protect\citeauthoryear{Kadoya, Khan, Watanapongvanich, and
+  Binnagan}{Kadoya et~al\mbox{.}}{2020}]%
+        {kadoya2020emotional}
+\bibfield{author}{\bibinfo{person}{Yoshihiko Kadoya}, \bibinfo{person}{Mostafa
+  Saidur~Rahim Khan}, \bibinfo{person}{Somtip Watanapongvanich}, {and}
+  \bibinfo{person}{Punjapol Binnagan}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Emotional status and productivity: Evidence from
+  the special economic zone in Laos}.
+\newblock \bibinfo{journal}{\emph{Sustainability}} \bibinfo{volume}{12},
+  \bibinfo{number}{4} (\bibinfo{year}{2020}), \bibinfo{pages}{1544}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pervez}{Pervez}{2010}]%
+        {pervez2010impact}
+\bibfield{author}{\bibinfo{person}{Muhammad~Ali Pervez}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Impact of emotions on employee’s job performance:
+  An evidence from organizations of Pakistan}.
+\newblock \bibinfo{journal}{\emph{OIDA International Journal of Sustainable
+  Development}} \bibinfo{volume}{1}, \bibinfo{number}{5}
+  (\bibinfo{year}{2010}), \bibinfo{pages}{11--16}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shaver, Schwartz, Kirson, and O'connor}{Shaver
+  et~al\mbox{.}}{1987}]%
+        {shaver1987emotion}
+\bibfield{author}{\bibinfo{person}{Phillip Shaver}, \bibinfo{person}{Judith
+  Schwartz}, \bibinfo{person}{Donald Kirson}, {and} \bibinfo{person}{Cary
+  O'connor}.} \bibinfo{year}{1987}\natexlab{}.
+\newblock \showarticletitle{Emotion knowledge: further exploration of a
+  prototype approach.}
+\newblock \bibinfo{journal}{\emph{Journal of personality and social
+  psychology}} \bibinfo{volume}{52}, \bibinfo{number}{6}
+  (\bibinfo{year}{1987}), \bibinfo{pages}{1061}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{2022}]%
+        {wikiemotion}
+\bibfield{author}{\bibinfo{person}{Wikipedia}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Emotion-Wikipedia}.
+\newblock \bibinfo{howpublished}{Website}.
+\newblock
+\newblock
+\shownote{\url{https://en.wikipedia.org/wiki/Emotion}.}
+
+
+\bibitem[\protect\citeauthoryear{Yassine and Hajj}{Yassine and Hajj}{2010}]%
+        {5693422}
+\bibfield{author}{\bibinfo{person}{Mohamed Yassine} {and}
+  \bibinfo{person}{Hazem Hajj}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{A Framework for Emotion Mining from Text in Online
+  Social Networks}. In \bibinfo{booktitle}{\emph{2010 IEEE International
+  Conference on Data Mining Workshops}}. \bibinfo{pages}{1136--1142}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDMW.2010.75}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zhou, Phadnis, and Olechowski}{Zhou
+  et~al\mbox{.}}{2020}]%
+        {10.1115/1.4047685}
+\bibfield{author}{\bibinfo{person}{Jinxuan~(Janice) Zhou},
+  \bibinfo{person}{Vrushank Phadnis}, {and} \bibinfo{person}{Alison
+  Olechowski}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Analysis of Designer Emotions in Collaborative and
+  Traditional Computer-Aided Design}}.
+\newblock \bibinfo{journal}{\emph{Journal of Mechanical Design}}
+  \bibinfo{volume}{143}, \bibinfo{number}{2} (\bibinfo{date}{08}
+  \bibinfo{year}{2020}).
+\newblock
+\showISSN{1050-0472}
+\urldef\tempurl%
+\url{https://doi.org/10.1115/1.4047685}
+\showDOI{\tempurl}
+\showeprint{https://asmedigitalcollection.asme.org/mechanicaldesign/article-pdf/143/2/021401/6558698/md\_143\_2\_021401.pdf}
+\newblock
+\shownote{021401.}
+
+
+\end{thebibliography}

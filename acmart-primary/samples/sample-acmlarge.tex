@@ -138,7 +138,7 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  This report mainly discussed the impact of different emotions may have on coding efficiency. We use both quantitative and qualitative analysis to find the results. For the quantitative analysis, we investigate the open-source repositories, mine the emotion hidden inside the commit messages and find the relationship between emotion and coding efficiency. For the qualitative analysis, we make some interviews with software engineers from big companies, research teams and open-source community.
+  This report mainly discussed the impacts of different emotions may have on coding efficiency. We use both quantitative and qualitative analysis to find the results. For the quantitative analysis, we investigate the open-source repositories, mine the emotion hidden inside the commit messages and find the relationship between emotion and coding efficiency. For the qualitative analysis, we make some interviews with software engineers from dot-com companies, research teams and open-source community.
 
 \end{abstract}
 
@@ -200,15 +200,15 @@ In this part, we will discuss definition from wikipedia\cite{wikiemotion}, the E
 In this part we will discuss how does emotion affect productivity. 
 The papers are \cite{kadoya2020emotional},\cite{coviello2020effect},\cite{pervez2010impact},\cite{barsade2007does},\cite{shaver1987emotion}
 \subsection{Emotional Mining}
-Introduce the emotional mining methods used in github.The papers discussed in this part is \cite{5693422},\cite{10.1115/1.4047685},\cite{c.elmohamed}.
+Introduce the emotional mining methods used in github. The papers discussed in this part are \cite{5693422},\cite{10.1115/1.4047685},\cite{c.elmohamed}.
 
 \section{Research Questions}
 \begin{itemize}
-  \item How do we define and categorize emotions?
-  \item How do we know engineers’ emotions from their codes?
+  \item How do we define and categorize different kinds of emotion?
+  \item How do we know engineers’ emotion from their codes?
   \item How do we measure the efficiency of coding?
   \item Does the emotion change have impact on the efficiency of coding?
-  \item What effect will the emotion change cause on coding efficiency?
+  \item What effects will the emotion change cause on coding efficiency?
 \end{itemize}
 
 
@@ -230,7 +230,7 @@ We will analyze the results of the study to show the relationship between differ
 
 \section{Conclusion}
 Conclude the paper by summarizing the findings of the research questions and our contributions.
-Then consider the future works to improve our researches.
+Then we will consider future works to improve our researches.
 
 
 
@@ -250,7 +250,7 @@ Then consider the future works to improve our researches.
 Critique: "one concern that comes to my mind is that developers are often required to write commit messages in a certain format, which may not be able to convey emotions. For example, some short messages like ‘[merge] merge from main branch’ are neural and could be difficult to analyze. How would you cleanse the dataset while remaining unbiased is a challenge. Overall, the proposal was well structured and the research methods make sense to me.
 "\par
 Solution: We make a new design to select some open-source github repositories which contains relatively more valid data.
-And we will pick some of them which are easy to analyze their emotions hidden inside, and abandon the others. We will reduce the bias by calculating the efficiency with the time between the selected commit log and its previous log. So we think this does not add much bias to our results.\par 
+And we will pick some of them from which are easy to analyze emotions hidden inside, and abandon the others. We will reduce the bias by calculating the efficiency with the time between the selected commit logs and its previous logs. So we think this does not add much bias to our results.\par 
 
 Critique: "Suggestions: - Your research topic is really interesting! Lots of great work is being done around the emotions of engineers/designers/developers. If you need some inspiration for how to analyze and process data related to emotions, here is a paper that investigates the emotions during mechanical design, that I think could be relevant:  https://doi.org/10.1115/1.4047685 - At times, the writing is vague or unclear. 
 It may be more impactful for the statements/claims you make if you use examples and provide sources. 
@@ -259,7 +259,7 @@ considering it was used quite a few times in class as an example of a flawed met
 - Try to add more to your motivation for the next deliverables and really prove that what you are studying is important and impactful!
 "\par
 Solution: We read the paper and try to improve our writing by adding more examples. 
-We think you made a good point about the measurement, we are considering using the coding value metrics as a backup option. And we will use some more examples to prove our study's significance.\par
+We think you made a good point about the measurement. We are considering using the coding value metrics as a backup option. And we will use more examples to prove our study's significance.\par
 
 Critique: "It is worth noting that generally speaking, the wording of the common commit logs is usually quite neutral. 
 How to analyze the emotions of the programmers based on these commit messages accurately deserves further refinement. 
@@ -271,7 +271,7 @@ Critique: "I only have one concern that the fourth research question, ‘Does th
 is a close-end question, maybe some further supplement to find some exact relationship or modifying it to be a ‘what’ question would be better? 
 And I would suggest that combining qualitatively analyzing the coding efficiency via something like self-report of developers may also provide some help."\par
 Solution: We added a new RQ to ask 'What impact the emotion change will have on the efficiency of coding?'. 
-And we have changed part of our plans to include an interview of engineers/open-source developers.
+And we have changed part of our plans to include interviews of engineers/open-source developers.
 
 
 Critique: "First, the use of interviews may generate biases, such as people who are willing to be interviewed tend to show a more positive mood when they are chosen and tracked, etc.
@@ -288,8 +288,8 @@ If it is possible to add more questions about the connection between emotion and
 Is that useful? Do engineers realize which emotion is most optimal for their code efficiency? etc. 
 Secondly, for the interview part, whether keeping a record of mood and code efficiency at the beginning of working will have an impact on their work efficiency? 
 Since they may be more productive if they record their progress."\par
-Solution: For the first problem, we think emotion is mostly an unconscious psychological activity, so most of time, people will not try to change it consciously. So we add some questions in our interview about the emotion changes and the coding efficiency changes to solve this problem.
-For the second point, we revised our interview methods. We will not record their performance any more for two reasons: First, the time of research is too short to complete some projects. So it's meaningless to record their coding efficiency in a month. Second, as you said, if recorded, they will realize that they are monitored and increase their working efficiency unconsciously.
+Solution: For the first problem, we think emotion is mostly an unconsciously psychological activity, so most of time, people will not try to change it consciously. So we add some questions in our interviews about the emotion changes and the coding efficiency changes to solve this problem.
+For the second point, we revised our interview methods. We will not record their performance any more for two reasons. First, the time of research is too short to complete some projects. So it's meaningless to record their coding efficiency in a month. Second, as you said, if recorded, they will realize that they are monitored and increase their working efficiency unconsciously.
 So we just use an interview to ask them recall their emotion change, working efficiency and evaluation during the project.
 \par
 

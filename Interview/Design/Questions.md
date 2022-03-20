@@ -38,7 +38,7 @@
 - Tell me some memorable/considerable projects you've done previously.
 - Is there a due date of your project at the time?
 - What's your personal target of the project?
-- Tell me more about the procedure of the project? Is there anything interesting/signifcant that makes it memorable?
+- Tell me more about the procedure of the project? Is there anything interesting/significant that makes it memorable?
 - How's your emotional situation throughout the way?
 - May I know your exact completeness in the project of your aim, due time or something else?
 

@@ -27,6 +27,7 @@
 - sadness
 - disgust
 - anger
+- surprise
 
 ### Predicted outcomes
 

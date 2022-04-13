@@ -1,6 +1,6 @@
 
 \documentclass[sigconf]{acmart}
-
+\usepackage{makecell}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -19,7 +19,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Emotion Impacts in Coding Efficiency}
+\title{Exploratory Analysis of Emotions in Computer Engineering}
 
 
 \author{Jiaming Xu}
@@ -111,10 +111,18 @@ We will collect and analyze our data in both qualitative and quantitative ways.
 %Then we will calculate the coding efficiency of each mined commit messages accordingly.
 \subsection{Study 2: Semi-structured Interview}
 We design a semi-structured interview to do qualitative study to explore the relationship between emotion impacts and coding efficiency on the subjective perspective. Besides, we also tried to figure out the potential factors which influence the emotional status of people during the project in order to give suggestions with reference values to both employers and team leaders.
-% 计划要做那些任务
-We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering reltaed people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network, including employees at different degrees in Internet companies, graduate students, and open-source developers.
-
-
+\\\\
+Since the interview aims on evaluating influence, express and outcome factors, we propose several types of factors which we will focus on in the interview designing and analysis. For the influence factors, we searched some typical reasons and did brief talks with some engineers other than the participants, we finally introduce the following influence factors:
+\begin{itemize}
+	\item Project Factors
+	\item Social Factors
+\end{itemize}
+%计划要做哪些任务
+TODO
+\\\\
+We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering related people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network and engineer community, including employees at different degrees in Internet companies, graduate students, and open-source developers.
+\\\\
+TODO
 
 \section{Emotional Mining}
 
@@ -123,22 +131,21 @@ We plan to interview 10-20 participants from different regions about their proje
 \section{Interview}
 
 % 实际做了哪些任务
-Practically, we recruit 16 participants overall from diversed regions, status of employment and division background. For the composition of repondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
-
-All the participants are currently or formly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further 
+Practically, we recruit 16 participants overall from diverse regions, status of employment and division background. For the composition of respondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
+\\\\
+All the participants are currently or formerly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further evaluation and analysis, we asked participants for permission to record audio
 \begin{table}[hbtp]
 \caption{Composition of Participants}
-
 \begin{tabular}{lll}
-                      & Number of People & Perception \\ \hline
+\Xhline{2\arrayrulewidth}
+Employment Status    & Number of People & Perception \\ \hline
 Graduate Student      & 4                & 25\%       \\
 Junior Engineer       & 4                & 25\%       \\
 Senior Engineer       & 3                & 18.75\%    \\
 Open-source Developer & 5                & 31.25\%    \\
 Overall               & 16               & 100\%     \\
-
+\Xhline{2\arrayrulewidth}
 \end{tabular}
-
 \end{table}
 
 % 各个任务具体是如何设计并实现的

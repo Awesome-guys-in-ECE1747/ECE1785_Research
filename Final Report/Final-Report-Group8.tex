@@ -1,0 +1,165 @@
+
+\documentclass[sigconf]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\setcopyright{none}
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Emotion Impacts in Coding Efficiency}
+
+
+\author{Jiaming Xu}
+\email{jm.xu@mail.utoronto.ca}
+\affiliation{%
+  \institution{1007698831, Group 8, Department of ECE, University of Toronto}
+  \city{Toronto}
+  \state{Ontario}
+  \country{Canada}
+  \postcode{M5B 0A5}
+}
+
+\author{Teng Yue}
+\email{teng.yue@mail.utoronto.ca}
+\affiliation{% 
+  \institution{1007826792, Group 8, Department of ECE, University of Toronto}
+  \city{Toronto}
+  \state{Ontario}
+  \country{Canada}
+  \postcode{M5B 0A5}}
+
+
+\author{Wenrui Xu}
+\email{wenrui.xu@mail.utoronto.ca}
+\affiliation{%
+  \institution{1008313228, Group 8, Department of ECE, University of Toronto}
+  \city{Toronto}
+  \state{Ontario}
+  \country{Canada}
+  \postcode{M5B 0A5}
+}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  This report mainly discussed the impacts of different emotions may have on coding efficiency. We use both quantitative and qualitative analysis to find the results. For the quantitative analysis, we investigate the open-source repositories, mine the emotion hidden inside the commit messages and find the relationship between emotion and coding efficiency. For the qualitative analysis, we make some interviews with software engineers from dot-com companies, research teams and open-source community. Besides, some participants also shared their project emotional experience on other engineer-related approaches, which indicates some general clues of emotion impacts in computer engineering.
+
+\end{abstract}
+
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Emotion Mining, Coding Efficiency, Computer Engineering}
+
+
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+\pagestyle{plain}
+\section{Introduction}
+Brief introduction of the research topic, including the background information, the motivation and contribution of our research.
+
+\section{Literature Review}
+Detailed information of definition of emotions, categorization and emotional mining.\\
+Major references are:\cite{c.elmohamed},\cite{ekman1999basic},\cite{wikiemotion},\cite{10.1115/1.4047685},\cite{shaver1987emotion},\cite{5693422},\cite{barsade2007does},\cite{pervez2010impact},\cite{coviello2020effect},\cite{kadoya2020emotional}.
+\subsection{Definition \& Categories of Emotions}
+The definition and features of emotions from a psychological aspect. Using a consistent categorization standard to analyze the emotions. Explain the categories and the words which belongs to these emotions.
+In this part, we will discuss definition from wikipedia\cite{wikiemotion}, the Ekman emotion framework\cite{ekman1999basic}.
+\subsection{Emotion and productivity}
+In this part we will discuss how does emotion affect productivity. 
+The papers are \cite{kadoya2020emotional},\cite{coviello2020effect},\cite{pervez2010impact},\cite{barsade2007does},\cite{shaver1987emotion}
+\subsection{Emotional Mining}
+Introduce the emotional mining methods used in github. The papers discussed in this part are \cite{5693422},\cite{10.1115/1.4047685},\cite{c.elmohamed}.
+
+\section{Research Questions}
+
+%TODO: More discussions, maybe we need a grounded theory?
+There are a number of research questions we plan to figure out through the research.
+\begin{itemize}
+  \item How do we define and categorize different kinds of emotion?
+  \item How do we know engineers’ emotion from their codes?
+  \item How do we measure the efficiency of coding?
+  \item Does the emotion change have impact on the efficiency of coding?
+  \item What effects will the emotion change cause on coding efficiency?
+\end{itemize}
+
+
+\section{Methodology}
+
+We will collect and analyze our data in both qualitative and quantitative ways.
+
+\subsection{Study 1: Emotional Mining}
+%TODO
+%We will use the emotional mining methods to mine the emotions in the selected repositories which are easy to analyze.
+%Then we will calculate the coding efficiency of each mined commit messages accordingly.
+\subsection{Study 2: Semi-structured Interview}
+We design a semi-structured interview to do qualitative study to explore the relationship between emotion impacts and coding efficiency on the subjective perspective. Besides, we also tried to figure out the potential factors which influence the emotional status of people during the project in order to give suggestions with reference values to both employers and team leaders.
+% 计划要做那些任务
+We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering reltaed people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network, including employees at different degrees in Internet companies, graduate students, and open-source developers.
+
+
+
+\section{Emotional Mining}
+
+% TODO
+
+\section{Interview}
+
+% 实际做了哪些任务
+Practically, we recruit 16 participants overall from diversed regions, status of employment and division background. For the composition of repondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
+
+All the participants are currently or formly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further 
+\begin{table}[hbtp]
+\caption{Composition of Participants}
+
+\begin{tabular}{lll}
+                      & Number of People & Perception \\ \hline
+Graduate Student      & 4                & 25\%       \\
+Junior Engineer       & 4                & 25\%       \\
+Senior Engineer       & 3                & 18.75\%    \\
+Open-source Developer & 5                & 31.25\%    \\
+Overall               & 16               & 100\%     \\
+
+\end{tabular}
+
+\end{table}
+
+% 各个任务具体是如何设计并实现的
+
+% 取得了什么数据
+
+% 得到了什么结论
+\section{Discussion}
+
+
+\section{Conclusion}
+%Conclude the paper by summarizing the findings of the research questions and our contributions.
+%Then we will consider future works to improve our researches.
+
+\section{Acknowledgement}
+
+
+\section{Future Work}
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{final}
+\end{document}
+\endinput

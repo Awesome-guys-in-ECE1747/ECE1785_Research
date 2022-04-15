@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  14 APR 2022 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  15 APR 2022 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,41 +962,32 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 74.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--84
-
- []
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 102.
 [1.1{d:/Apps/TexLive/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 126.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--156
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 156.
+[2.2]
+Underfull \hbox (badness 10000) in paragraph at lines 164--180
 
  []
 
@@ -1004,30 +995,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--156
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 45.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) NATALIE MENDES. 2017.  How do emo-tions a
 f-fect pro-duc-tiv-ity?
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 99--106
+Underfull \hbox (badness 2253) in paragraph at lines 129--136
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) [New re-search].  Web-site.   []$https : / 
 / www . atlassian . com / blog / software -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) teams / new -[] research -[] emotional -[] 
 intelligence -[] in -[] the -[] workplace# : ~ :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 129--136
 \T1/LinuxLibertineT-TLF/m/n/7 (+13) text = Positive % 20emotions % 20are % 20ve
 ry % 20important ,[] increases % 20anxiety %
  []
 
-LaTeX Info: Redefining \tempurl on input line 159.
+LaTeX Info: Redefining \tempurl on input line 210.
 ) (d:/Apps/TexLive/texlive/2021/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (d:/Apps/TexLive/texlive/2021/texmf-dist/tex/generic/stringenc/se-utf8.def
@@ -1040,23 +1031,24 @@ Class acmart Warning: ACM reference format is mandatory
 (acmart)              \settopmatter command..
 
 
+Class acmart Warning: CCS concepts are mandatory for papers over two pages.
+
+
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 177.
-[2.2] (./Final-Report-Group8.aux)
+[3.3] (./Final-Report-Group8.aux)
 Package rerunfilecheck Info: File `Final-Report-Group8.out' has not changed.
-(rerunfilecheck)             Checksum: A7B39555CD88726D42480FCF03AC0433;2521.
+(rerunfilecheck)             Checksum: 08F9A25C6D0C3507CBC5E1FBD9CDFE5E;2404.
  ) 
 Here is how much of TeX's memory you used:
- 20864 strings out of 478276
- 339306 string characters out of 5844002
- 714551 words of memory out of 5000000
- 38269 multiletter control sequences out of 15000+600000
- 566302 words of font info for 223 fonts, out of 8000000 for 9000
+ 20919 strings out of 478276
+ 340430 string characters out of 5844002
+ 714143 words of memory out of 5000000
+ 38284 multiletter control sequences out of 15000+600000
+ 569468 words of font info for 246 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 84i,11n,131p,1018b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,131p,1023b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7gruk
 w.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_n
 h77jq.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lb
@@ -1067,10 +1059,10 @@ ibertine/LinBiolinumTB.pfb><d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/type1
 nts/type1/public/libertine/LinLibertineTB.pfb><d:/Apps/TexLive/texlive/2021/tex
 mf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Apps/TexLive/texliv
 e/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on Final-Report-Group8.pdf (2 pages, 325630 bytes).
+Output written on Final-Report-Group8.pdf (3 pages, 331711 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  49305 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -7,52 +7,112 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: final.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 2913 of file ACM-Reference-Format.bst
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 2913 of file ACM-Reference-Format.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 2974 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 2974 of file ACM-Reference-Format.bst
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 2974 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 2974 of file ACM-Reference-Format.bst
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 2974 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 2974 of file ACM-Reference-Format.bst
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 2974 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 2974 of file ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--unusual to have number, but no volume, for ekman1992a
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 3072 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 3072 of file ACM-Reference-Format.bst
+Name 1 in "Jack, R., Garrod, O., and Schyns, P." has a comma at the end for entry jack
+while executing---line 3072 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Jack, R., Garrod, O., and Schyns, P." for entry jack
+while executing---line 3072 of file ACM-Reference-Format.bst
+Warning--unusual to have number, but no volume, for jack
+Warning--unusual to have number, but no volume, for russelja
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 3072 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 3072 of file ACM-Reference-Format.bst
+Name 1 in "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." has a comma at the end for entry wilson
+while executing---line 3072 of file ACM-Reference-Format.bst
+Too many commas in name 1 of "Wilson-Mendenhall, C. D., Barrett, L. F., and Barsalou, L. W." for entry wilson
+while executing---line 3072 of file ACM-Reference-Format.bst
+Warning--unusual to have number, but no volume, for wilson
 Warning--empty publisher in 5693422
 Warning--empty address in 5693422
 Warning--page numbers missing in both pages and numpages fields in 10.1115/1.4047685
-You've used 10 entries,
+You've used 15 entries,
             5981 wiz_defined-function locations,
-            1540 strings with 20051 characters,
-and the built_in function-call counts, 10424 in all, are:
-= -- 1507
-> -- 278
+            1572 strings with 20608 characters,
+and the built_in function-call counts, 16375 in all, are:
+= -- 2496
+> -- 391
 < -- 0
-+ -- 89
-- -- 101
-* -- 666
-:= -- 974
-add.period$ -- 54
-call.type$ -- 10
-change.case$ -- 64
-chr.to.int$ -- 10
-cite$ -- 13
-duplicate$ -- 903
-empty$ -- 636
-format.name$ -- 125
-if$ -- 2630
++ -- 125
+- -- 150
+* -- 959
+:= -- 1461
+add.period$ -- 79
+call.type$ -- 15
+change.case$ -- 91
+chr.to.int$ -- 15
+cite$ -- 22
+duplicate$ -- 1447
+empty$ -- 984
+format.name$ -- 182
+if$ -- 4271
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 133
-num.names$ -- 70
-pop$ -- 326
+missing$ -- 49
+newline$ -- 173
+num.names$ -- 105
+pop$ -- 502
 preamble$ -- 1
-purify$ -- 143
+purify$ -- 210
 quote$ -- 0
-skip$ -- 327
+skip$ -- 570
 stack$ -- 0
-substring$ -- 722
-swap$ -- 85
+substring$ -- 1139
+swap$ -- 191
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 216
-warning$ -- 3
-while$ -- 65
+type$ -- 296
+warning$ -- 7
+while$ -- 105
 width$ -- 0
-write$ -- 241
-(There were 3 warnings)
+write$ -- 336
+(There were 28 error messages)

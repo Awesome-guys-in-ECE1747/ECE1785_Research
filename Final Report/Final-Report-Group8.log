@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  15 APR 2022 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.26)  15 APR 2022 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -961,33 +961,30 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 74.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 74.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 87.
 
 [1.1{d:/Apps/TexLive/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 126.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--156
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--156
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
 
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 156.
+(Font)              scaled to size 6.0pt on input line 155.
 [2.2]
-Underfull \hbox (badness 10000) in paragraph at lines 164--180
+Underfull \hbox (badness 10000) in paragraph at lines 163--179
 
  []
 
@@ -1042,27 +1039,28 @@ Package rerunfilecheck Info: File `Final-Report-Group8.out' has not changed.
 (rerunfilecheck)             Checksum: 08F9A25C6D0C3507CBC5E1FBD9CDFE5E;2404.
  ) 
 Here is how much of TeX's memory you used:
- 20919 strings out of 478276
- 340430 string characters out of 5844002
- 714143 words of memory out of 5000000
+ 20928 strings out of 478276
+ 340688 string characters out of 5844002
+ 713936 words of memory out of 5000000
  38284 multiletter control sequences out of 15000+600000
- 569468 words of font info for 246 fonts, out of 8000000 for 9000
+ 570408 words of font info for 252 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  84i,11n,131p,1023b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7gruk
-w.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_n
-h77jq.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lb
-tn_76gpa5.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertin
-e/lbtn_25tcsq.enc}<d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/type1/public/l
-ibertine/LinBiolinumTB.pfb><d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/type1
-/public/libertine/LinLibertineT.pfb><d:/Apps/TexLive/texlive/2021/texmf-dist/fo
-nts/type1/public/libertine/LinLibertineTB.pfb><d:/Apps/TexLive/texlive/2021/tex
-mf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Apps/TexLive/texliv
-e/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on Final-Report-Group8.pdf (3 pages, 331711 bytes).
+w.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_o
+exx6f.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lb
+tn_nh77jq.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libertin
+e/lbtn_76gpa5.enc}{d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/libe
+rtine/lbtn_25tcsq.enc}<d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/type1/publ
+ic/libertine/LinBiolinumTB.pfb><d:/Apps/TexLive/texlive/2021/texmf-dist/fonts/t
+ype1/public/libertine/LinLibertineT.pfb><d:/Apps/TexLive/texlive/2021/texmf-dis
+t/fonts/type1/public/libertine/LinLibertineTB.pfb><d:/Apps/TexLive/texlive/2021
+/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/Apps/TexLive/te
+xlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on Final-Report-Group8.pdf (3 pages, 332607 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 179 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  40 named destinations out of 1000 (max. 500000)
- 49305 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 51353 words of extra memory for PDF output out of 51595 (max. 10000000)
 

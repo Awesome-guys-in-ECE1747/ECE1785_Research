@@ -56,14 +56,17 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  This report mainly discussed the impacts of different emotions may have on coding efficiency. We use both quantitative and qualitative analysis to find the results. For the quantitative analysis, we investigate the open-source repositories, mine the emotion hidden inside the commit messages and find the relationship between emotion and coding efficiency. For the qualitative analysis, we make some interviews with software engineers from dot-com companies, research teams and open-source community. Besides, some participants also shared their project emotional experience on other engineer-related approaches, which indicates some general clues of emotion impacts in computer engineering.
+With the development of the software industry, software developers are playing increasingly important roles in dot-com companies, and companies’ competitiveness is also highly depended on the working efficiency of software developers. Therefore, a psychology about software developing engineers is demanded urgently. However, the previous surveys paid too much attention to the external factors like gender, age, family status, instead of engineers' internal factors, such as emotions. 
+
+In this paper, we present how we mine out the relationship between emotion and efficiency and aim at attracting more attention to the psychological health of software development engineers. We apply both qualitative and quantitative method in our research. Our results show that positive emotions tend to motivate people to contribute more, while anger and fear may slow down the working pace greatly.
+
 \end{abstract}
 
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Emotion Mining, Working Efficiency, Psychology, Computer Engineering}
+\keywords{Emotion Mining, Working Efficiency, Psychology, Software Development}
 
 
 
@@ -159,15 +162,14 @@ There are several evaluating metrics we have considered. We will talk about them
 
 \subsection{Study 2: Semi-structured Interview}
 We design a semi-structured interview to do qualitative study to explore the relationship between emotion impacts and coding efficiency on the subjective perspective. Besides, we also tried to figure out the potential factors which influence the emotional status of people during the project in order to give suggestions with reference values to both employers and team leaders.
-\\\\
+\par
 Since the interview aims on evaluating influence, express and outcome factors, we propose several types of factors which we will focus on in the interview designing and analysis. For the influence factors, we searched some typical reasons and did brief talks with some engineers other than the participants, we finally introduce the following influence factors:
 \begin{itemize}
 	\item Project Factors: The objective project settings, such as the size, priority, stage, content, topic of the project.
 	\item Social Factors: The subjective environment of people engaged during the project procedure, including project related factors such as the relationship among team members, the attitude of team leader or boss, and unrelated factors such as issues in daily life or issues for other job in the occupation.
-\end{itemize}
-
+\end{itemize} \par 
 For the emotion status, we classify the emotional factor into 6 categories, adapted from Parrot's theory: love, joy, surprise, fear, sadness and anger. We define the first three emotions positive emotions and the other three negative emotions. In general speaking, we conclude mostly on the polarity of emotion (i.e. positive or negative) instead of the subclasses since the attitudes toward same scenario are different among people due to their personalities.
-\\\\
+\par
 For the outcome factors, we interview people's comments for the consequence in two aspects.
 \begin{itemize}
     \item Proejct consequence. We ask partipants to discuss both the objective and subjective assesment of the project outcome. In objective aspect, project consequence refers to the completeness of expected progress or planned result at current stage, which could be evaluate accurately. And we also investigate people's own opinion of the result, such as if they think they made all their work with efforts in the project.
@@ -175,7 +177,7 @@ For the outcome factors, we interview people's comments for the consequence in t
 \end{itemize}
 
 We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering related people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network and engineer community, including employees at different degrees in Internet companies, graduate students, and open-source developers.
-\\\\
+\par
 For the data processing, we plan to record interviews by scripts and analyze the interview by open coding and selective coding. As our questions are designed for different section of our research questions respectively, we could divide the script into several sections and evaluate them seperately.
 
 \section{Emotion Mining}
@@ -210,7 +212,7 @@ fear     & 365.89  & 163.32    & 202.57    \\ \hline
 To show it clearly, we plot a map for the result, shown in \ref{Fig.qr}.
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{QuantitativeResult.png}
+\includegraphics[width=0.48\textwidth]{QuantitativeResult.png}
 \caption{Histogram of Table 1}
 \label{Fig.qr}
 \end{figure}

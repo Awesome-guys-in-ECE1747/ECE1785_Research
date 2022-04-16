@@ -156,23 +156,27 @@ There are several evaluating metrics we have considered. We will talk about them
     \item First is the line of code. We will use the recorded commit log and find the commit time. Then we will calculate the total lines of code changed in the contributors' commits around that time, both for additions and deletions. 
     \item Second is the code value metrics. Some SDKs contains the tools to compute the value metrics of the commit. The tools will evaluate how important the modified code is to the module and open-source projects, and mark points according to it. By utilizing this kind of computation, we can get a clearer view of the contribution in the commit logs which contains different emotions.
 \end{itemize}
-%TODO
-%We will use the emotional mining methods to mine the emotions in the selected repositories which are easy to analyze.
-%Then we will calculate the coding efficiency of each mined commit messages accordingly.
+
 \subsection{Study 2: Semi-structured Interview}
 We design a semi-structured interview to do qualitative study to explore the relationship between emotion impacts and coding efficiency on the subjective perspective. Besides, we also tried to figure out the potential factors which influence the emotional status of people during the project in order to give suggestions with reference values to both employers and team leaders.
 \\\\
 Since the interview aims on evaluating influence, express and outcome factors, we propose several types of factors which we will focus on in the interview designing and analysis. For the influence factors, we searched some typical reasons and did brief talks with some engineers other than the participants, we finally introduce the following influence factors:
 \begin{itemize}
-	\item Project Factors
-	\item Social Factors
+	\item Project Factors: The objective project settings, such as the size, priority, stage, content, topic of the project.
+	\item Social Factors: The subjective environment of people engaged during the project procedure, including project related factors such as the relationship among team members, the attitude of team leader or boss, and unrelated factors such as issues in daily life or issues for other job in the occupation.
 \end{itemize}
-%计划要做哪些任务
-For the emotion status, we classify the emotional factor into 6 categories, adapted from Parrot's theory: love, joy, surprise, fear, sadness and anger. %outcome
+
+For the emotion status, we classify the emotional factor into 6 categories, adapted from Parrot's theory: love, joy, surprise, fear, sadness and anger. We define the first three emotions positive emotions and the other three negative emotions. In general speaking, we conclude mostly on the polarity of emotion (i.e. positive or negative) instead of the subclasses since the attitudes toward same scenario are different among people due to their personalities.
 \\\\
+For the outcome factors, we interview people's comments for the consequence in two aspects.
+\begin{itemize}
+    \item Proejct consequence. We ask partipants to discuss both the objective and subjective assesment of the project outcome. In objective aspect, project consequence refers to the completeness of expected progress or planned result at current stage, which could be evaluate accurately. And we also investigate people's own opinion of the result, such as if they think they made all their work with efforts in the project.
+    \item Personal consequence. As some of the participants are students or freshman of their occupation, we suppose they will have personal consequence more likely, such as promotion or knowledge and ability improvement. Thus, we also ask about their comments of the project outcomes about themselves.
+\end{itemize}
+
 We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering related people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network and engineer community, including employees at different degrees in Internet companies, graduate students, and open-source developers.
 \\\\
-For the data processing, % collect and analyze
+For the data processing, we plan to record interviews by scripts and analyze the interview by open coding and selective coding. As our questions are designed for different section of our research questions respectively, we could divide the script into several sections and evaluate them seperately.
 
 \section{Emotion Mining}
 For current project phase, we implemented the first stage of emotion prediction and used the lines of code as our evaluating metrics. 
@@ -220,8 +224,7 @@ Last but not least, in negative emotions, sadness makes contributors improve the
 \section{Interview}
 % 实际做了哪些任务
 Practically, we recruit 16 participants overall from diverse regions, status of employment and division background, their employment status is list in table \ref{comp}. For the composition of respondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
-\\\\
-All the participants are currently or formerly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further evaluation and analysis, we asked participants for permission to record audio %其他经验
+
 \begin{table}[hbtp]
 \caption{Composition of Participants}
 \label{comp}
@@ -236,6 +239,11 @@ Overall               & 16               & 100\%     \\
 \Xhline{2\arrayrulewidth}
 \end{tabular}
 \end{table}
+
+All the participants are currently or formerly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further evaluation and analysis, we asked participants for permission to record audio in order to use transcribe services to convert the audio into text script. The classification for participants is based on their employment status. More detailedly, the students include one undergraduate student, 2 graduate student and one pH.D student. For junior engineers, one primary engineer works in SME and 3 of them work in large enterprise. All the senior engineer we interviewed are from large enterprises. For the reason of categorization, we will discuss further in the discussion section.
+
+We finished all the 16 interviews in March 2022 through virtual meeting. We arrange the interview time to be 20-30 minutes and averagedly, the finishing time is around 23 minutes.
+
 
 % 各个任务具体是如何设计并实现的
 

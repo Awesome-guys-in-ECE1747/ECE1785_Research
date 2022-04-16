@@ -178,6 +178,7 @@ We plan to interview 10-20 participants from different regions about their proje
 \\\\
 For the data processing, we plan to record interviews by scripts and analyze the interview by open coding and selective coding. As our questions are designed for different section of our research questions respectively, we could divide the script into several sections and evaluate them seperately.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emotion Mining}
 For current project phase, we implemented the first stage of emotion prediction and used the lines of code as our evaluating metrics. 
 As is widely acknowledged, contributors in the open-source project "linux" is famous for their strong emotions in the commit messages and comments. So it's representative and suitable for our first-stage experiment, and we believe we can find some exciting facts in this repository. We will get some hypothesis according to the results and validate our thoughts in future by extending the experiment to other repositories.
@@ -222,7 +223,7 @@ This hypothesis is consistent with the previous study in psychological area.\par
 Apart from that, we can clearly see that in the graph, the surprise emotion tend to make developers do a large number of deletions than additions. In our opinion,  this is because the developers usually feel surprised in the situation that some malicious bugs happen and they need to make the situation back in control at once. For example, if there are security vulnerabilities in some modules, they tend to stop the module at once, and make other functions behave normally. They tend to delete more code to locate the bug, make the project function normally and fix the bug later on.\par
 Last but not least, in negative emotions, sadness makes contributors improve their efficiency while anger and fear decrease the working efficiency. We think anger and fear is stronger emotions which will hinder the developers' thoughts, and sadness will make contributors clam down, thus improving the working efficiency. 
 \section{Interview}
-% 实际做了哪些任务
+
 Practically, we recruit 16 participants overall from diverse regions, status of employment and division background, their employment status is list in table \ref{comp}. For the composition of respondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
 
 \begin{table}[hbtp]
@@ -230,8 +231,8 @@ Practically, we recruit 16 participants overall from diverse regions, status of 
 \label{comp}
 \begin{tabular}{lll}
 \Xhline{2\arrayrulewidth}
-Employment Status    & Number of People & Perception \\ \hline
-Student      & 4                & 25\%       \\
+Employment Status     & Number of People & Perception \\ \hline
+Student               & 4                & 25\%       \\
 Junior Engineer       & 4                & 25\%       \\
 Senior Engineer       & 3                & 18.75\%    \\
 Open-source Developer & 5                & 31.25\%    \\
@@ -242,14 +243,27 @@ Overall               & 16               & 100\%     \\
 
 All the participants are currently or formerly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further evaluation and analysis, we asked participants for permission to record audio in order to use transcribe services to convert the audio into text script. The classification for participants is based on their employment status. More detailedly, the students include one undergraduate student, 2 graduate student and one pH.D student. For junior engineers, one primary engineer works in SME and 3 of them work in large enterprise. All the senior engineer we interviewed are from large enterprises. For the reason of categorization, we will discuss further in the discussion section.
 
-We finished all the 16 interviews in March 2022 through virtual meeting. We arrange the interview time to be 20-30 minutes and averagedly, the finishing time is around 23 minutes.
+We finished all the 16 interviews in March 2022 through virtual meeting, whose time is arranged to be 20-30 minutes and averagedly, the finishing time is around 23 minutes. The framework of interview is constucted by 2 or 3 same sections. In each section, we will asked questions about a project experience so totally we will have 2 or 3 project experiences of each individual. At the beginning of a section, we will ask participants to generally introduce their experience and then ask 5 fixed questions followed by 3-5 extra questions to follow up the details if necessary. The question will be skipped if the participant already state it in the previous free talk. The fixed question examples and relative protocols are listed below.
 
+\begin{itemize}
+    \item Project status evaluation. \textit{What were the requirements of the project? How many time did you have to complete your task? What stage was the project when you got involved in the project? How many people were there in the group? What position were you at in the group?}
+    \item Environment evaluation. \textit{How was your team? Introduce one or two team members to me who impressed you most.}
+	\item (Positive) Events influence evaluation. \textit{Was there any impressive moments when you worked on the project? Would you like to share them with me?}
+	\item (Negative) Events influence evaluation. \textit{Was there any challenge or problem you faced in the project? How did you figure out or deal with it?}
+	\item Outcome evaluation. \textit{What's your opinion about the project now? Did your team finish all the tasks? What's your boss' comment about the project?}
+\end{itemize}
 
-% 各个任务具体是如何设计并实现的
+In the interview design, the first four questions are focus on the research question 1 and only the last question are asking about research question 2. Specifically, the third and fourth questions are expected to have positive or negative question. According to behavior psychology thesis, people tend to talk about positive events when they are asked about "impressive" memories, if the general emotion is negative, they will share the problem and challenge they faced and express negative emotions, so the fourth question will be skipped. For the all 16 participants, they all answer the questions as expected. The personal consequence is added to the fixed question since our first participant share his story about his growth and development and improvement which is really moving, thus we consider personal development also a significant positve expression and append it into the fixed questions for the following interviews.
+\\\\
+We code the data based on the question we asked, and put the free talk into different sections, then we manually select key words and evaluate the information expressed in every section. There’re several findings we could conclude from the interview:​
 
-% 取得了什么数据
+\begin{itemize}
+    \item Unreasonable scheduling in project management is the most significant influencing factors leading to negative emotions. (i.e. sadness, anger, disgust, fear)​
+    \item A supportive team will always lead to positive emotions (i.e. Joy, surprise, sense of achievement) throughout the process and become a major reason of people’s positive emotions.​
+	\item Negative emotions will sometimes lead to delay and failure to meet project expectations.​
+	\item According to the interviewees, the emotion of people will not change frequently, but people who attending project at Stage I tends to have negative emotions and higher working pressure.
 
-% 得到了什么结论
+\end{itemize}
 
 
 \section{Discussion \& Limitation}
@@ -265,12 +279,13 @@ For the emotion prediction, stage 1 uses regex. There are many commits which are
 For the working efficiency measurement, lines of code changed will certainly bring bias. If developer needs a lot of time to look up the materials and finishes it with short code, our method will dismiss the value of his thinking, but the working efficiency is actually high because the code value he brings is high. The code value metric can decrease the bias to some extent, but there are also problems about it. The open-source coders don't have stable working time everyday, so maybe they contribute less because they don't work on it. And some of them may fork their own branch and merge it when finishing the module, thus bring a very high value in only one commit. So, it's hard to define the measurement metric and there is no right way to quantify the efficiency.
 \subsection{Interview}
 
-% interviewee分类
-% interview其他结果
+The interviewees are categorized by their employement status. Typically, we should divide them by different dimensions, however, in this study, we didn't get enough participants for a more trustful conclusion. Thus, in all other ways of division, we may have only one partcipant in the particular division. For example, there's only one participant who have experience on UX/UI design and one majored in database architecture. Ideally, we consider a complete investigation should invite 50 participants from different sources and networks in order to cover all the position in software development with all individual bias.
+////
+Besides, we also have some experience shared by the participants about some experiences unrelated to computer engineering. Surprising, though the total different topics are covered, the conclusion is quite similar with the
+software development experiences.
 
 \section{Conclusion}
-%Conclude the paper by summarizing the findings of the research questions and our contributions.
-%Then we will consider future works to improve our researches.
+
 In our research, we investigated the relationship between emotions and working efficiency in real-world software development. We investigate it in both quantitative and qualitative ways, and found that positive emotions tend to motivate people to contribute more, while anger and fear may slow down the working pace greatly.\par
 In the future, we will use deep-learning to train a complex model in Linux repository, and based on it, we will extend the model to various repositories. And we will use secondary emotion framework to further enhance our research method. If the model is too complex to compute, we can also use the subclass distillation to generate a student model and make a balance between complexity and accuracy.
 

@@ -57,7 +57,6 @@
 %% article.
 \begin{abstract}
   This report mainly discussed the impacts of different emotions may have on coding efficiency. We use both quantitative and qualitative analysis to find the results. For the quantitative analysis, we investigate the open-source repositories, mine the emotion hidden inside the commit messages and find the relationship between emotion and coding efficiency. For the qualitative analysis, we make some interviews with software engineers from dot-com companies, research teams and open-source community. Besides, some participants also shared their project emotional experience on other engineer-related approaches, which indicates some general clues of emotion impacts in computer engineering.
-
 \end{abstract}
 
 
@@ -135,7 +134,26 @@ There are a number of research questions we plan to figure out through the resea
 We will collect and analyze our data in both qualitative and quantitative ways.
 
 \subsection{Study 1: Emotion Mining}
-We design a emotion mining from open-source repositories for the quantitative analysis.
+We design a data mining method to do the quantitative analysis and predict the emotions hidden in open-source repositories' commit messages. Using the predictions and evaluation of the commit log, we try to find the relationship between emotions impacts and working efficiency in open-source projects.
+We divide the experiment design into two parts, including emotion prediction and working efficiency evaluation.
+\subsubsection{Emotion Prediction}\par
+In this section, we will talk about our plans for emotion predictions. We plan to use text emotion mining for this part. We will take the commit messages and their description as raw data for us to do the data mining.
+There are several phases in our plan. 
+\begin{itemize}
+    \item For the first step, we will select a repository in which the commit messages tend to show a strong emotion. We will take it as an example, and do the analysis and prediction on this repository to form the basic results and conclusions. We will use the regular expressions filter to label the emotions within the commit information. It's easier for us to deploy it and costs less. Every commit log which contains the emotion related words will be recorded in our local files.
+    \item Then we will try to apply more complex methods to the repository. For example, we can use the convolutional neural network to build and train a model to predict the emotions within the commit messages. The comparison between these two methods will be discussed later.
+    \item At last, we will validate our observation and insights derived from the example project to other repositories. 
+\end{itemize}
+
+
+
+\subsubsection{Working Efficiency Evaluation}\par
+In this part, we will introduce our plan for evaluating the working efficiency around the commit time.
+There are several evaluating metrics we have considered. We will talk about them separately.
+\begin{itemize}
+    \item First is the line of code. We will use the recorded commit log and find the commit time. Then we will calculate the total lines of code changed in the contributors' commits around that time, both for additions and deletions. 
+    \item Second is the code value metrics. Some SDKs contains the tools to compute the value metrics of the commit. The tools will evaluate how important the modified code is to the module and open-source projects, and mark points according to it. By utilizing this kind of computation, we can get a clearer view of the contribution in the commit logs which contains different emotions.
+\end{itemize}
 %TODO
 %We will use the emotional mining methods to mine the emotions in the selected repositories which are easy to analyze.
 %Then we will calculate the coding efficiency of each mined commit messages accordingly.
@@ -155,9 +173,16 @@ We plan to interview 10-20 participants from different regions about their proje
 TODO
 
 \section{Emotion Mining}
-\subsection{}
+For current project phase, we implemented the first stage of emotion prediction and used the lines of code as our evaluating metrics. 
+As is widely acknowledged, contributors in the open-source project "linux" is famous for their strong emotions in the commit messages and comments. So it's representative and suitable for our first-stage experiment, and we believe we can find some exciting facts in this repository. We will get some hypothesis according to the results and validate our thoughts in future by extending the experiment to other repositories.
+We will show our experiment setups in this section.
+\subsection{Emotion Based Filter}
+We finished the first stage we mentioned in section 4.1.1. We use the regular expression to filter the commit messages and get only the commits which show a strong emotion in their commit descriptions. The expressions for each emotions come from "the Compass DeRose Guide to Emotion Words". We will select the commits which contains these words and label them accordingly.
 % TODO
 
+\subsection{Working Efficiency Computation}
+\subsection{Result}
+\subsection{}
 \section{Interview}
 
 % 实际做了哪些任务
@@ -183,9 +208,9 @@ Overall               & 16               & 100\%     \\
 % 取得了什么数据
 
 % 得到了什么结论
-\section{Discussion}
+\section{Discussion \& Limitations}
 
-
+\section{}
 \section{Conclusion}
 %Conclude the paper by summarizing the findings of the research questions and our contributions.
 %Then we will consider future works to improve our researches.

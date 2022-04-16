@@ -126,7 +126,7 @@ There are a number of research questions we plan to figure out through the resea
 %  \item How do we measure the efficiency of coding?
 %  \item Does the emotion change have impact on the efficiency of coding?
 %  \item What effects will the emotion change cause on coding efficiency?
-	\item What factors will cause the emotion change in computer engineering?​
+	\item What factors will cause the emotion change in computer engineering?
 	\item Does the emotion change have impacts on the working progress?
 \end{itemize}
 
@@ -179,14 +179,42 @@ For current project phase, we implemented the first stage of emotion prediction 
 As is widely acknowledged, contributors in the open-source project "linux" is famous for their strong emotions in the commit messages and comments. So it's representative and suitable for our first-stage experiment, and we believe we can find some exciting facts in this repository. We will get some hypothesis according to the results and validate our thoughts in future by extending the experiment to other repositories.
 We will show our experiment setups in this section.
 \subsection{Emotion Based Filter}
-We finished the first stage we mentioned in section 4.1.1. We use the regular expression to filter the commit messages and get only the commits which show a strong emotion in their commit descriptions. The expressions for each emotions come from "the Compass DeRose Guide to Emotion Words". We will select the commits which contains these words and label them accordingly.
+We finished the first stage we mentioned in section 4.1.1. We use the regular expression to filter the commit messages and get only the commits which show a strong emotion in their commit descriptions. The expressions for each emotions come from "the Compass DeRose Guide to Emotion Words"\cite{derose}. We will select the commits which contains these words and label them accordingly. The word list for every emotion is listed in the appendix. \par
+For the detailed implementation, we use the beautifulsoup library to get the commit logs which contains the emotion words from github web-page. We recorded the sha information for every commit and the recorded data will be used later in working efficiency computation. We didn't use the REST API v3 and GraphGL API v4, because these APIs do not support regular expression filter in the index.
 % TODO
-
 \subsection{Working Efficiency Computation}
-\subsection{Result}
-\subsection{}
-\section{Interview}
+Here in this part, we measure the working efficiency using evaluation metrics. For the first stage, we only use the lines of code metric to evaluate the working efficiency. In the previous part, we recorded the "SHA" information of the commits which contains strong emotions. We will use the "SHA" to make a URL to request commit information from REST API. We will request the commit information at that day and add up the additions and deletions contained in the json return information to calculate the average lines of code changed. The average lines of code changed at that day will be considered as the working efficiency in that emotion. Temperately, we did not realize this function, we just use the exact commit information recorded in the previous part instead of the average number of commits at that day.
+After that, we will compute the average lines of code changed in all the commits of the same emotion. 
 
+\subsection{Result}
+The result for every emotion is shown in the table.
+\begin{table}[hbtp]
+\begin{tabular}{|l|l|l|l|}
+\hline
+         & Total   & Additions & Deletions \\ \hline
+happy    & 611.52  & 311.61    & 299.91    \\ \hline
+love     & 590.75  & 483.69    & 107.06    \\ \hline
+surprise & 1473.96 & 25.05     & 1448.91   \\ \hline
+sad      & 714.88  & 593.83    & 121.05    \\ \hline
+anger    & 332.011 & 174.36    & 157.65    \\ \hline
+fear     & 365.89  & 163.32    & 202.57    \\ \hline
+\end{tabular}
+\end{table}
+To show it clearly, we plot a map for the result.
+\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
+\centering %图片居中
+\includegraphics[width=0.45\textwidth]{QuantitativeResult.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\caption{Quantitative Result} %最终文档中希望显示的图片标题
+\label{Fig.qr} %用于文内引用的标签
+\end{figure}
+
+\subsection{Analysis}
+As we can see in the graph, when developers are in positive emotions like happy/love/surprise, they tend to have a higher working efficiency and contribute more lines of code in total. The negative emotions,except sad, tend to decrease the working efficiency compared with positive emotions.
+So we conclude that in general the positive emotions will motivate the contributors to contribute more to the open-source projects than negative emotions, thus improving the working efficiency.
+This hypothesis is consistent with the previous study in psychological area.\par
+Apart from that, we can clearly see that in the graph, the surprise emotion tend to make developers do a large number of deletions than additions. In our opinion,  this is because the developers usually feel surprised in the situation that some malicious bugs happen and they need to make the situation back in control at once. For example, if there are security vulnerabilities in some modules, they tend to stop the module at once, and make other functions behave normally. They tend to delete more code to locate the bug, make the project function normally and fix the bug later on.\par
+Last but not least, in negative emotions, sadness makes contributors improve their efficiency while anger and fear decrease the working efficiency. We think anger and fear is stronger emotions which will hinder the developers' thoughts, and sadness will make contributors clam down, thus improving the working efficiency. 
+\section{Interview}
 % 实际做了哪些任务
 Practically, we recruit 16 participants overall from diverse regions, status of employment and division background, their employment status is list in table \ref{comp}. For the composition of respondents, 11 of them are from East Asia and 5 are from North America, while 9 of the participants choose not to disclose the full scripts of interview due to contents involving confidential issues, and rest of the scripts are included in the repository of our project on GitHub.
 \\\\
@@ -211,17 +239,25 @@ Overall               & 16               & 100\%     \\
 % 取得了什么数据
 
 % 得到了什么结论
-\section{Discussion}
-
-\section{Limitation}
+\section{Discussion \& Limitation}
+In this section, we will discuss our methods' pros, cons and improving methods accordingly. Then we will discuss in detail about the limitations of our research.
+\subsection{Quantitative Method}
+First we will discuss the rationality of our method and the advantage of it.
+As we have mentioned in part 4.1, we divide the experiment into several stages. For the first stage, we use regex and lines of code, and take linux as raw data. It’s easy to build and deploy, the relatively small amount of data is convenient for us to take a further look at the details. And we take only Linux repository as our raw data, because Linux commit messages tend to show a strong feeling. We filter out the other commit information which is irrelevant to our research, so the commits left are emotions which are easy to distinguish and the emotion categorization is more accurate. Then for the second stage, we plan to use convolutional neural network for predicting all the emotions in the commits, so no commit will be deleted from our raw dataset. It’s obvious that natural language processing and machine learning can predict the category more accurately. And the words are selected by the dictionary, it can also cause bias. These methods can help reduce the bias caused by the dictionary. What's more, as we have talked in previous sessions, there are subclass emotions, we think there will be slight differences between subclass emotions which belong to the same upper-class emotions. By using CNN, we can use the secondary emotion framework as our categorization.\par
+For the working efficiency measurement, we use the lines of code to approximate the working efficiency, because it's the easiest way to measure. In the future work, we will use the code value metrics to evaluate the working efficiency. In our opinion, the lines of code in a certain period of time can represent the working efficiency to some extents. It's sufficient for us to get hypothesis in stage 1. And the code value metrics is certainly a better choice, it can evaluate the importance of the code, thus representing the value of the work in that period of time.
+Then we will discuss the threats to our validity. The threats comes from three aspects: selection of raw data, emotion prediction and working efficiency measurement.\par
+For the raw data selection, we selected the linux because it has strong emotions. It is representative, but different people have different emotions, and the emotions will affect people in different ways. The commit messages are not from the same author, and we learnt from the recorded data that: actually, the same author tends to show the same emotion in their commits. So it's hard to measure how the emotions affect different people, there will definitely be bias here. \par
+For the emotion prediction, stage 1 uses regex. There are many commits which are dismissed, they may contain the emotions which are less obvious to observe, and these emotions can affect the working efficiency in a different way. There will be bias if we dismiss them. But we use the CNN to solve it, which can also bring error and bias in its way. The model may have wrong predictions, may be overfitting on the training set, e.t.. So the error and bias here is unavoidable. \par
+For the working efficiency measurement, lines of code changed will certainly bring bias. If developer needs a lot of time to look up the materials and finishes it with short code, our method will dismiss the value of his thinking, but the working efficiency is actually high because the code value he brings is high. The code value metric can decrease the bias to some extent, but there are also problems about it. The open-source coders don't have stable working time everyday, so maybe they contribute less because they don't work on it. And some of them may fork their own branch and merge it when finishing the module, thus bring a very high value in only one commit. So, it's hard to define the measurement metric and there is no right way to quantify the efficiency.
+\subsection{Qualitative Method}
 \section{Conclusion}
 %Conclude the paper by summarizing the findings of the research questions and our contributions.
 %Then we will consider future works to improve our researches.
-
+In our research, we investigated the relationship between emotions and working efficiency in real-world software development. We investigate it in both quantitative and qualitative ways, and found that positive emotions tend to motivate people to contribute more, while anger and fear may slow down the working pace greatly.\par
+In the future, we will use deep-learning to train a complex model in Linux repository, and based on it, we will extend the model to various repositories. And we will use secondary emotion framework to further enhance our research method. If the model is too complex to compute, we can also use the subclass distillation to generate a student model and make a balance between complexity and accuracy.
 \section{Acknowledgement}
 
 
-\section{Future Work}
 
 
 \bibliographystyle{ACM-Reference-Format}

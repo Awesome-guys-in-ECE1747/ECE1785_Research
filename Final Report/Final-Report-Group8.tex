@@ -74,19 +74,48 @@
 \maketitle
 \pagestyle{plain}
 \section{Introduction}
-Brief introduction of the research topic, including the background information, the motivation and contribution of our research.
+With the continuous development of the social economy, the development of software engineering technology has made people's lives more convenient, and has also driven the development of many other industries. Also with the wide application of various software, people pay more and more attention to software engineering technology, and its practical application scope is also expanding. In order to meet people's requirements for high-quality life, software engineering technology must accelerate its development. Demand and development promote each other, making the software development industry continue to innovate. The newly generated technology also provides many jobs for society. At the same time, the software development department has a growing voice in Internet companies. More and more company managers are developed from the original junior or senior software engineers in the company. Many companies also set generous benefits and salaries for software engineers.
+\par 
+However, behind the exquisite web pages, complex and diverse software functions and decent salaries are the sweat and day-and-night hard work of software engineers. While well-paid, many software engineers are under pressure. Because Internet companies have put forward requirements for software engineers to work efficiently when developing software, it is necessary to compress the development time of software systems to minimize the development cycle of software. In the process of software development, iterative development has become an important content, which requires software engineers to have stronger testing capabilities and coordination capabilities. This places high demands on the software engineers' ability to adjustment, iterative development, and teamwork. Being in a state of high stress for a long time, developers are also very easy to become anxious and depressed.
+\par 
+In order for the company to have a strong competitiveness, Internet companies require employees to maintain high work efficiency. Additionally, in order to ensure the mental health of employees, a lot of companies have begun to pay attention to the mental health of employees. Some Internet companies regularly hold departmental activities to enhance the relationship between teams. A few Internet companies even set up special psychological counseling rooms for employees to relieve psychological pressure.
+\par 
+However, few previous papers have specifically explored the relationship between software engineer emotions and productivity. Indeed, there are a few papers discussing the relationship between positive mood and work efficiency. But the participants are not software engineers, and the research results may not be applicable to the field of software engineering. In addition, the relationship between positive and negative moods on work productivity has rarely been explored simultaneously.
+\par 
+Therefore, in this study, we intend to explore the relationship between software engineers' emotions and their productivity. First of all, on the basis of extensive reading and understanding of the related literature, we present the research status of the research field, including the main academic viewpoints, previous research results, focus of debate, existing problems and possible reasons, etc. We also conduct comprehensive analysis, summarization and comments on previous literature. Then, we will exploit both quantitative and qualitative method in our research, including an emotion mining and interviews respectively.
+\par 
+The rest of the paper will be presented as follows: section $2$ presents the literature review pertaining to emotions model and emotion mining. Section $3$ presents the research questions. Section $4$ presents how we collect and analyze data in both quantitative and qualitative ways. Section $5$ presents the process of conducting emotion mining. Section $6$ presents how we conduct interviews.
 
 \section{Literature Review}
-Detailed information of definition of emotions, categorization and emotional mining.\\
-Major references are:\cite{c.elmohamed},\cite{ekman1999basic},\cite{wikiemotion},\cite{10.1115/1.4047685},\cite{shaver1987emotion},\cite{5693422},\cite{barsade2007does},\cite{pervez2010impact},\cite{coviello2020effect},\cite{kadoya2020emotional}.
-\subsection{Definition \& Categories of Emotions}
-The definition and features of emotions from a psychological aspect. Using a consistent categorization standard to analyze the emotions. Explain the categories and the words which belongs to these emotions.
-In this part, we will discuss definition from wikipedia\cite{wikiemotion}, the Ekman emotion framework\cite{ekman1999basic}.
+In this section, we introduce emotion models and the emotion mining method we learned in the literature review.
+
+\subsection{Emotion Models}
+
+For more than half a century, basic emotion theory has been explored and disputed, propelling the field of emotional psychology forward. The basic emotion model proposes that humans have a limited set of biologically and psychologically "basic" emotions (e.g., fear, anger, joy, and sadness) \cite{wilson}, each displayed in an orderly recurring pattern of linked behavioral components \cite{ekman1992a} \cite{russelja}.
+\par 
+Even though many psychologists have accepted the theory of basic emotions, there is no consensus about the precise number of basic emotions. Robert Plutchik offered eight fundamental emotions, which he organized into a color wheel: anger, fear, sadness, disgust, surprise, anticipation, trust, and joy. Fear, anger, joy, sadness, contempt, disgust, and surprise were presented as seven basic emotions by Ekman, but he altered it to six basic emotions: fear, anger, joy, sadness, disgust, and surprise \cite{ekman1999basic}. According to Jack et al. \cite{jack}, humans have four primary emotions: fear, anger, joy, and sadness.
+\par 
+In this paper, we apply Parrott’s basic emotion model \cite{parott}, which consists of six basic emotions, which are love, joy, surprise, anger, sadness and fear respectively. Beside the six basic emotions, they can be subdivided into secondary emotions. Meanwhile, the secondary emotions can even be subdivided into tertiary emotions. In our search, we only apply the six basic emotions, but will try the secondary emotions in future study.
+
 \subsection{Emotion and productivity}
-In this part we will discuss how does emotion affect productivity. 
-The papers are \cite{kadoya2020emotional},\cite{coviello2020effect},\cite{pervez2010impact},\cite{barsade2007does},\cite{shaver1987emotion}
+Many literatures have shown the influences of emotions. 
+\par 
+Positive emotions and moods, according to Barsade et al. \cite{barsade2007does}, tend to improve performance at the individual, group, and organizational levels. Furthermore, they claimed that negative affective expressions can contaminate organizational cultures, influence leaders' perspectives, and potentially lead to aggressiveness or violence. Negative emotions (particularly rage) might, on the other hand, attract our attention to situations of injustice and unfairness, strengthen power perceptions, and improve bargaining outcomes.
+\par 
+Better mood actually affects worker productivity for workers whose compensation is mainly stable, according to Decio Coviello et al \cite{coviello2020effect}. For workers whose pay is dependent on performance, the negative effects of mood are reduced (high-powered incentives).
+\par 
+By analysing on-the-job emotionality, Yoshihiko Kadoya \cite{kadoya2020emotional} et al. investigated the link between workers' emotional states and productivity. Happiness was found to be strongly and positively associated to productivity, according to their findings. Such findings suggested that, in order to assure improved productivity, workers' emotional states should be handled as part of an organization's operational strategy.
+\par 
+M. Ali Pervez \cite{pervez2010impact} found that workplace emotions were only regarded important in terms of employee well-being and job satisfaction. Anger frequently leads to aggressiveness toward coworkers, whereas sadness leads to job discontent. An emotion, such as rage, interest, or trust, is neither instantaneous, nor is it long-lasting like a mood; rather, it is a brief event of coordinated changes in mind and body that has a direct impact on the employee's performance.
+\par 
+
 \subsection{Emotional Mining}
-Introduce the emotional mining methods used in github. The papers discussed in this part are \cite{5693422},\cite{10.1115/1.4047685},\cite{c.elmohamed}.
+Emotion mining is a quantitative method. Many previous papers have applied such approach in the data analysis process.
+\par
+Jinxuan Zhou et al. \cite{10.1115/1.4047685} demonstrated a new approach for mapping designer emotions and accompanying designer activities in synchronous collaborative CAD using automated facial emotion detection software and cursor tracking. Designers who worked in a paired workflow showed more emotion than designers who worked alone, according to their findings. In their technique, logistic regression was used to analyse the correlations between user actions and feelings for each combination of event and emotion for each participant, and meta-regression was used to aggregate the regression results for the two different working styles.
+\par 
+Mohamed Yassine et al. \cite{5693422} proposed a new paradigm for defining emotional interactions in social networks and then separating friends from acquaintances based on these qualities. A model for data collecting, database schemas, data processing, and data mining stages are all included in the framework. The goal was to see if the writer's writings conveyed his or her thoughts and feelings. The data was then employed to determine the strength of a relationship between two people based on the subjectivity of the texts they shared online. A k-means algorithm was used to divide the texts into three categories. The first category included objective or factual communications, the second moderately subjective writings implying some form of relationship between the users, and the third category included subjective texts implying a deep friendship between the two users.
+
 
 \section{Research Questions}
 

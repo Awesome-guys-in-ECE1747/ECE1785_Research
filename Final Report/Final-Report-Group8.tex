@@ -106,7 +106,7 @@ Positive emotions and moods, according to Barsade et al. \cite{barsade2007does},
 \par 
 Better mood actually affects worker productivity for workers whose compensation is mainly stable, according to Decio Coviello et al \cite{coviello2020effect}. For workers whose pay is dependent on performance, the negative effects of mood are reduced (high-powered incentives).
 \par 
-By analysing on-the-job emotionality, Yoshihiko Kadoya \cite{kadoya2020emotional} et al. investigated the link between workers' emotional states and productivity. Happiness was found to be strongly and positively associated to productivity, according to their findings. Such findings suggested that, in order to assure improved productivity, workers' emotional states should be handled as part of an organization's operational strategy.
+By analyzing on-the-job emotionality, Yoshihiko Kadoya \cite{kadoya2020emotional} et al. investigated the link between workers' emotional states and productivity. Happiness was found to be strongly and positively associated to productivity, according to their findings. Such findings suggested that, in order to assure improved productivity, workers' emotional states should be handled as part of an organization's operational strategy.
 \par 
 M. Ali Pervez \cite{pervez2010impact} found that workplace emotions were only regarded important in terms of employee well-being and job satisfaction. Anger frequently leads to aggressiveness toward coworkers, whereas sadness leads to job discontent. An emotion, such as rage, interest, or trust, is neither instantaneous, nor is it long-lasting like a mood; rather, it is a brief event of coordinated changes in mind and body that has a direct impact on the employee's performance.
 \par 
@@ -114,21 +114,17 @@ M. Ali Pervez \cite{pervez2010impact} found that workplace emotions were only re
 \subsection{Emotional Mining}
 Emotion mining is a quantitative method. Many previous papers have applied such approach in the data analysis process.
 \par
-Jinxuan Zhou et al. \cite{10.1115/1.4047685} demonstrated a new approach for mapping designer emotions and accompanying designer activities in synchronous collaborative CAD using automated facial emotion detection software and cursor tracking. Designers who worked in a paired workflow showed more emotion than designers who worked alone, according to their findings. In their technique, logistic regression was used to analyse the correlations between user actions and feelings for each combination of event and emotion for each participant, and meta-regression was used to aggregate the regression results for the two different working styles.
+Jinxuan Zhou et al. \cite{10.1115/1.4047685} demonstrated a new approach for mapping designer emotions and accompanying designer activities in synchronous collaborative CAD using automated facial emotion detection software and cursor tracking. Designers who worked in a paired workflow showed more emotion than designers who worked alone, according to their findings. In their technique, logistic regression was used to analyze the correlations between user actions and feelings for each combination of event and emotion for each participant, and meta-regression was used to aggregate the regression results for the two different working styles.
 \par 
 Mohamed Yassine et al. \cite{5693422} proposed a new paradigm for defining emotional interactions in social networks and then separating friends from acquaintances based on these qualities. A model for data collecting, database schemas, data processing, and data mining stages are all included in the framework. The goal was to see if the writer's writings conveyed his or her thoughts and feelings. The data was then employed to determine the strength of a relationship between two people based on the subjectivity of the texts they shared online. A k-means algorithm was used to divide the texts into three categories. The first category included objective or factual communications, the second moderately subjective writings implying some form of relationship between the users, and the third category included subjective texts implying a deep friendship between the two users.
 
 
 \section{Research Questions}
 
-%TODO: More discussions, maybe we need a grounded theory?
-There are two research questions we plan to figure out through the research.
+
+There are two research questions we conduct about emotion formation and effect which we will figure out through the research.
 \begin{itemize}
-%  \item How do we define and categorize different kinds of emotion?
-%  \item How do we know engineers’ emotion from their codes?
-%  \item How do we measure the efficiency of coding?
-%  \item Does the emotion change have impact on the efficiency of coding?
-%  \item What effects will the emotion change cause on coding efficiency?
+
 	\item What factors will cause the emotion change in computer engineering?
 	\item Does the emotion change have impacts on the working progress?
 \end{itemize}
@@ -136,14 +132,15 @@ There are two research questions we plan to figure out through the research.
 
 \section{Methodology}
 
-We collect and analyze our data in both qualitative and quantitative ways.
+In this section, we introduce the two studies we conduct based on quantitative and qualitative methods respectively.
 
 \subsection{Study 1: Emotion Mining}
 We design a data mining method to do the quantitative analysis and predict the emotions hidden in open-source repositories' commit messages. Using the predictions and evaluation of the commit log, we try to find the relationship between emotions impacts and working efficiency in open-source projects.
+\par
 We divide the experiment design into two parts, including emotion prediction and working efficiency evaluation.
-\subsubsection{Emotion Prediction}\par
-In this section, we will talk about our plans for emotion predictions. We plan to use text emotion mining for this part. We will take the commit messages and their description as raw data for us to do the data mining.
-There are several phases in our plan. 
+
+\subsubsection{Emotion Prediction}
+In this section, we will talk about our plans for emotion predictions. We plan to use text emotion mining for this part. We will take the commit messages and their description as raw data for us to do the data mining. And there are several phases in our plan, shown below. 
 \begin{itemize}
     \item For the first step, we will select a repository in which the commit messages tend to show a strong emotion. We will take it as an example, and do the analysis and prediction on this repository to form the basic results and conclusions. We will use the regular expressions filter to label the emotions within the commit information. It's easier for us to deploy it and costs less. Every commit log which contains the emotion related words will be recorded in our local files.
     \item Then we will try to apply more complex methods to the repository. For example, we can use the convolutional neural network to build and train a model to predict the emotions within the commit messages. The comparison between these two methods will be discussed later.
@@ -172,13 +169,13 @@ For the emotion status, we classify the emotional factor into 6 categories, adap
 \par
 For the outcome factors, we interview people's comments for the consequence in two aspects.
 \begin{itemize}
-    \item Proejct consequence. We ask partipants to discuss both the objective and subjective assesment of the project outcome. In objective aspect, project consequence refers to the completeness of expected progress or planned result at current stage, which could be evaluate accurately. And we also investigate people's own opinion of the result, such as if they think they made all their work with efforts in the project.
+    \item Project consequence. We ask participants to discuss both the objective and subjective assessment of the project outcome. In objective aspect, project consequence refers to the completeness of expected progress or planned result at current stage, which could be evaluate accurately. And we also investigate people's own opinion of the result, such as if they think they made all their work with efforts in the project.
     \item Personal consequence. As some of the participants are students or freshman of their occupation, we suppose they will have personal consequence more likely, such as promotion or knowledge and ability improvement. Thus, we also ask about their comments of the project outcomes about themselves.
 \end{itemize}
 
 We plan to interview 10-20 participants from different regions about their project experience. We will ask question to investigate their emotion status along the project working procedure, and infer the internal and external factors leading to their emotion status correspondingly. Our participants should comprise of software engineering related people from different specific divisions, for example, machine learning, backend developing, quality assurance engineering, UI/UX designing and etc. To achieve in more general and comprehensive conclusion, we also select participants from our own social network and engineer community, including employees at different degrees in Internet companies, graduate students, and open-source developers.
 \par
-For the data processing, we plan to record interviews by scripts and analyze the interview by open coding and selective coding. As our questions are designed for different section of our research questions respectively, we could divide the script into several sections and evaluate them seperately.
+For the data processing, we plan to record interviews by scripts and analyze the interview by open coding and selective coding. As our questions are designed for different section of our research questions respectively, we could divide the script into several sections and evaluate them separately.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Emotion Mining}
@@ -187,7 +184,7 @@ As is widely acknowledged, contributors in the open-source project "linux" is fa
 We will show our experiment setups in this section.
 \subsection{Emotion Based Filter}
 We finished the first stage we mentioned in section 4.1.1. We use the regular expression to filter the commit messages and get only the commits which show a strong emotion in their commit descriptions. The expressions for each emotions come from "the Compass DeRose Guide to Emotion Words"\cite{derose}. We will select the commits which contains these words and label them accordingly. The word list for every emotion is listed in the appendix. \par
-For the detailed implementation, we use the beautifulsoup library to get the commit logs which contains the emotion words from github web-page. We recorded the sha information for every commit and the recorded data will be used later in working efficiency computation. We didn't use the REST API v3 and GraphGL API v4, because these APIs do not support regular expression filter in the index.
+For the detailed implementation, we use the beautifulsoup library to get the commit logs which contains the emotion words from GitHub web-page. We recorded the SHA information for every commit and the recorded data will be used later in working efficiency computation. We didn't use the REST API v3 and GraphGL API v4, because these APIs do not support regular expression filter in the index.
 % TODO
 \subsection{Working Efficiency Computation}
 Here in this part, we measure the working efficiency using evaluation metrics. For the first stage, we only use the lines of code metric to evaluate the working efficiency. In the previous part, we recorded the "SHA" information of the commits which contains strong emotions. We will use the "SHA" to make a URL to request commit information from RESTful API. We will request the commit information at that day and add up the additions and deletions contained in the json return information to calculate the average lines of code changed. The average lines of code changed at that day will be considered as the working efficiency in that emotion. Temperately, we did not realize this function, we just use the exact commit information recorded in the previous part instead of the average number of commits at that day.
@@ -198,15 +195,16 @@ The result for every emotion is shown in the table \ref{tb.q}.
 
 \begin{table}[hbtp]
 \caption{Lines of Code Changed in Commits for Emotions}
-\begin{tabular}{|l|l|l|l|}
-\hline
+\begin{tabular}{llll}
+\Xhline{2\arrayrulewidth}
          & Total   & Additions & Deletions \\ \hline
-happy    & 611.52  & 311.61    & 299.91    \\ \hline
-love     & 590.75  & 483.69    & 107.06    \\ \hline
-surprise & 1473.96 & 25.05     & 1448.91   \\ \hline
-sad      & 714.88  & 593.83    & 121.05    \\ \hline
-anger    & 332.011 & 174.36    & 157.65    \\ \hline
-fear     & 365.89  & 163.32    & 202.57    \\ \hline
+happy    & 611.52  & 311.61    & 299.91    \\ 
+love     & 590.75  & 483.69    & 107.06    \\ 
+surprise & 1473.96 & 25.05     & 1448.91   \\ 
+sad      & 714.88  & 593.83    & 121.05    \\ 
+anger    & 332.011 & 174.36    & 157.65    \\ 
+fear     & 365.89  & 163.32    & 202.57    \\ 
+\Xhline{2\arrayrulewidth}
 \end{tabular}
 \label{tb.q}
 \end{table}
@@ -219,7 +217,7 @@ To show it clearly, we plot a map for the result, shown in \ref{Fig.qr}.
 \end{figure}
 
 \subsection{Analysis}
-As we can see in the graph, when developers are in positive emotions like happy/love/surprise, they tend to have a higher working efficiency and contribute more lines of code in total. The negative emotions,except sad, tend to decrease the working efficiency compared with positive emotions.
+As we can see in the graph, when developers are in positive emotions like happy/love/surprise, they tend to have a higher working efficiency and contribute more lines of code in total. The negative emotions, except sad, tend to decrease the working efficiency compared with positive emotions.
 So we conclude that in general the positive emotions will motivate the contributors to contribute more to the open-source projects than negative emotions, thus improving the working efficiency.
 This hypothesis is consistent with the previous study in psychological area.\par
 Apart from that, we can clearly see that in the graph, the surprise emotion tend to make developers do a large number of deletions than additions. In our opinion,  this is because the developers usually feel surprised in the situation that some malicious bugs happen and they need to make the situation back in control at once. For example, if there are security vulnerabilities in some modules, they tend to stop the module at once, and make other functions behave normally. They tend to delete more code to locate the bug, make the project function normally and fix the bug later on.\par
@@ -245,7 +243,7 @@ Overall               & 16               & 100\%     \\
 
 All the participants are currently or formerly engineering occupied, and they may or may not share their experience in engineering related or unrelated divisions. For the further evaluation and analysis, we asked participants for permission to record audio in order to use transcribe services to convert the audio into text script. The classification for participants is based on their employment status. More detailedly, the students include one undergraduate student, 2 graduate students and a Ph.D. student. For junior engineers, one primary engineer works in SME and 3 of them work in large enterprises. All the senior engineers we interviewed are from large enterprises. For the reason of categorization, we will discuss further in the discussion section.
 
-We finished all the 16 interviews in March 2022 through virtual meeting, whose time is arranged to be 20-30 minutes and averagedly, the finishing time is around 23 minutes. The framework of interview is constucted by 2 or 3 same sections. In each section, we will asked questions about a project experience so totally we will have 2 or 3 project experiences of each individual. At the beginning of a section, we will ask participants to generally introduce their experience and then ask 5 fixed questions followed by 3-5 extra questions to follow up the details if necessary. The question will be skipped if the participant already state it in the previous free talk. The fixed question examples and relative protocols are listed below.
+We finished all the 16 interviews in March 2022 through virtual meeting, whose time is arranged to be 20-30 minutes and averagely, the finishing time is around 23 minutes. The framework of interview is constructed by 2 or 3 same sections. In each section, we will asked questions about a project experience so totally we will have 2 or 3 project experiences of each individual. At the beginning of a section, we will ask participants to generally introduce their experience and then ask 5 fixed questions followed by 3-5 extra questions to follow up the details if necessary. The question will be skipped if the participant already state it in the previous free talk. The fixed question examples and relative protocols are listed below.
 
 \begin{itemize}
     \item Project status evaluation. \textit{What were the requirements of the project? How many time did you have to complete your task? What stage was the project when you got involved in the project? How many people were there in the group? What position were you at in the group?}
@@ -255,7 +253,7 @@ We finished all the 16 interviews in March 2022 through virtual meeting, whose t
 	\item Outcome evaluation. \textit{What's your opinion about the project now? Did your team finish all the tasks? What's your boss' comment about the project?}
 \end{itemize}
 
-In the interview design, the first four questions are focus on the research question 1 and only the last question are asking about research question 2. Specifically, the third and fourth questions are expected to have positive or negative question. According to behavior psychology thesis, people tend to talk about positive events when they are asked about "impressive" memories, if the general emotion is negative, they will share the problem and challenge they faced and express negative emotions, so the fourth question will be skipped. For the all 16 participants, they all answer the questions as expected. The personal consequence is added to the fixed question since our first participant share his story about his growth and development and improvement which is really moving, thus we consider personal development also a significant positve expression and append it into the fixed questions for the following interviews.
+In the interview design, the first four questions are focus on the research question 1 and only the last question are asking about research question 2. Specifically, the third and fourth questions are expected to have positive or negative question. According to behavior psychology thesis, people tend to talk about positive events when they are asked about "impressive" memories, if the general emotion is negative, they will share the problem and challenge they faced and express negative emotions, so the fourth question will be skipped. For the all 16 participants, they all answer the questions as expected. The personal consequence is added to the fixed question since our first participant share his story about his growth and development and improvement which is really moving, thus we consider personal development also a significant positive expression and append it into the fixed questions for the following interviews.
 
 \begin{itemize}
 	\item Unreasonable scheduling in project management is the most significant influencing factors leading to negative emotions. (i.e. sadness, anger, disgust, fear)
@@ -278,7 +276,7 @@ For the emotion prediction, stage 1 uses regex. There are many commits which are
 For the working efficiency measurement, lines of code changed will certainly bring bias. If developer needs a lot of time to look up the materials and finishes it with short code, our method will dismiss the value of his thinking, but the working efficiency is actually high because the code value he brings is high. The code value metric can decrease the bias to some extent, but there are also problems about it. The open-source coders don't have stable working time everyday, so maybe they contribute less because they don't work on it. And some of them may fork their own branch and merge it when finishing the module, thus bring a very high value in only one commit. So, it's hard to define the measurement metric and there is no right way to quantify the efficiency.
 
 \subsection{Interview}
-The interviewees are categorized by their employement status. Typically, we should divide them by different dimensions, however, in this study, we didn't get enough participants for a more trustful conclusion. Thus, in all other ways of division, we may have only one partcipant in the particular division. For example, there's only one participant who have experience on UX/UI design and one majored in database architecture. Ideally, we consider a complete investigation should invite 50 participants from different sources and networks in order to cover all the position in software development with all individual bias.
+The interviewees are categorized by their employment status. Typically, we should divide them by different dimensions, however, in this study, we didn't get enough participants for a more trustful conclusion. Thus, in all other ways of division, we may have only one participant in the particular division. For example, there's only one participant who have experience on UX/UI design and one majored in database architecture. Ideally, we consider a complete investigation should invite 50 participants from different sources and networks in order to cover all the position in software development with all individual bias.
 
 Besides, we also have some experience shared by the participants about some experiences unrelated to computer engineering. Surprising, though the total different topics are covered, the conclusion is quite similar with the
 software development experiences.
